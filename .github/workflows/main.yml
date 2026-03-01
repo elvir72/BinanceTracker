@@ -22,6 +22,12 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Pobierz Gradle Wrapper
+        run: |
+          mkdir -p gradle/wrapper
+          curl -L https://services.gradle.org/distributions/gradle-8.7-bin.zip -o gradle-bin.zip
+          wget -q https://raw.githubusercontent.com/gradle/gradle/v8.7.0/gradle/wrapper/gradle-wrapper.jar -O gradle/wrapper/gradle-wrapper.jar
+
       - name: Nadaj uprawnienia do Gradle
         run: chmod +x ./gradlew
 
