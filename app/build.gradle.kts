@@ -65,4 +65,5 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.mpandroidchart)
     debugImplementation(libs.compose.ui.tooling)
-}
+    implementation("androidx.appcompat:appcompat:1.7.0")
+} 
