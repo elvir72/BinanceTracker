@@ -1,7 +1,10 @@
 package com.binancetracker.data.model
 
+// WSZYSTKIE IMPORTY NA POCZĄTKU!
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 // ── REST Models ──────────────────────────────────────────────
 
@@ -161,9 +164,6 @@ data class Kline(
 )
 
 // ── Room Entities ────────────────────────────────────────────
-
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 
 @Entity(tableName = "favorite_symbols")
 data class FavoriteSymbol(
